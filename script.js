@@ -12,6 +12,7 @@ function addTodo(event) {
     event.preventDefault();
     if (todoInput.value == "") {
         alert("Empty input field not allowed!!");
+        return;
     }
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
