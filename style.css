@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(240deg,rgb(218, 1560, 64),#f1dcbc,#eb720f);
+    color: white;
+    font-family: 'Dela Gothic One', cursive;
+    min-height: 100vh;
+    text-shadow: 2px 2px 5px black;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form button,form input{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 1%;
+}
+form input:hover{
+    box-shadow: 2px 2px 5px rgb(27, 21, 21);
+}
+form button{
+    color:#f19306;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+form button:hover{
+    background:#e08804;
+    color: white;
+}
+form button:active{
+    font-size: 10px;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: rgb(247, 243, 243);
+    color: rgb(14, 1, 1);
+    font-size: 20px;
+    min-width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-shadow: none;
+    padding: 1px;;
+    font-family: cursive;
+    font-weight:bold;
+
+}
+.todo li{
+    flex: 1;
+    list-style: none;
+}
+.trash-btn{
+    background: #dd3607;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+    background: #13e058;
+    color: rgb(252, 246, 246);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn:active{
+    font-size: 10px;
+    transition: all 0.1s ease;
+}
+.trash-btn:active{
+    font-size: 10px;
+    transition: all 0.1s ease;
+}
+.complete-btn:hover{
+    background: rgb(125, 247, 4);
+}
+.trash-btn:hover{
+    background: rgb(250, 96, 127);
+}
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+.completed{
+    text-decoration:line-through ;
+    opacity: 0.5;
+}
